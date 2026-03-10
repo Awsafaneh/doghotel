@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Loving Homes Dog Hotel - Our Services. Pick-up, 24/7 vet care, indoor play, daily updates and more in Hong Kong." />
+    <title>Loving Homes | Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <a href="#main" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+
+    <header class="navbar" id="navbar" role="banner">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Loving Homes">
+                <span class="logo-icon" aria-hidden="true">🐾</span>
+                <span class="logo-text">
+                    <span class="logo-title" data-i18n="brandName">Loving Homes</span>
+                    <span class="logo-tagline" data-i18n="brandTagline">Dog Hotel</span>
+                </span>
+            </a>
+            <nav id="nav-menu" class="nav-links" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-link" data-page="index" data-i18n="navHome">الرئيسية</a>
+                <a href="services.html" class="nav-link" data-page="services" data-i18n="navServices">خدماتنا</a>
+                <a href="packages.html" class="nav-link" data-page="packages" data-i18n="navPackages">الحزم</a>
+                <a href="facilities.html" class="nav-link" data-page="facilities" data-i18n="navFacilities">المرافق</a>
+                <a href="about.html" class="nav-link" data-page="about" data-i18n="navAbout">من نحن</a>
+                <a href="contact.html" class="nav-link" data-page="contact" data-i18n="navContact">تواصل معنا</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" data-current-lang="ar" aria-label="Switch to English">
+                    <span class="lang-toggle-label"></span>
+                </button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="تبديل المظهر">
+                    <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+                    <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="navBook">احجز الآن</a>
+                <button class="hamburger" id="hamburger" aria-label="القائمة" aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- PAGE HERO -->
+        <section class="page-hero services-hero" aria-labelledby="ph-title">
+            <div class="page-hero-img" aria-hidden="true">
+                <img src="images/forest-walk.png" alt="" />
+            </div>
+            <div class="hero-img-overlay" aria-hidden="true"></div>
+            <div class="page-hero-bg" aria-hidden="true">
+                <div class="ph-blob ph-blob-1"></div>
+                <div class="ph-blob ph-blob-2"></div>
+            </div>
+            <div class="container page-hero-inner">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html" data-i18n="breadHome">الرئيسية</a>
+                    <span aria-hidden="true">›</span>
+                    <span aria-current="page" data-i18n="navServices">خدماتنا</span>
+                </nav>
+                <div class="ph-badge" aria-hidden="true">🏥</div>
+                <h1 class="page-hero-title" id="ph-title" data-i18n="servicesHeroTitle">خدماتنا المتكاملة</h1>
+                <p class="page-hero-desc" data-i18n="servicesHeroDesc">مجموعة شاملة من الخدمات المتميزة</p>
+            </div>
+        </section>
+
+        <!-- SERVICES GRID -->
+        <section class="section" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="servicesSec1Badge">ما نقدّمه</span>
+                    <h2 class="section-title" id="services-title" data-i18n="servicesSec1Title">كل ما يحتاجه كلبك</h2>
+                    <p class="section-desc" data-i18n="servicesSec1Desc">خدمات احترافية يقدمها فريق متخصص</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Service 1 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img src="images/luxury-suite.png" alt="" />
+                        </div>
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">🏠</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s1Title">غرف مجهزة بالكامل</h3>
+                            <p data-i18n="s1Desc">غرف فاخرة مزودة بتدفئة وتبريد تحت الأرضية وتلفزيون.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s1f1">تدفئة/تبريد تحت
+                                        الأرضية</span></li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s1f2">تلفزيون في كل غرفة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s1f3">بيئة هادئة ومريحة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s1f4">تهوية ممتازة</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img src="images/pet_transport.png" alt="" />
+                        </div>
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">🚗</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s2Title">خدمة التوصيل</h3>
+                            <p data-i18n="s2Desc">نوفر خدمة التوصيل "من وإلى المكان" بسيارات مجهزة.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s2f1">توصيل من وإلى المكان</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s2f2">سيارات مجهزة ومريحة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s2f3">سائقون موثوقون
+                                        ومدربون</span></li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s2f4">تغطية جغرافية واسعة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img src="images/forest-walk.png" alt="" />
+                        </div>
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">🌿</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s3Title">مراعي خارجية آمنة</h3>
+                            <p data-i18n="s3Desc">مساحات خضراء واسعة ومسوّرة لكلبك.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s3f1">مساحات خضراء واسعة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s3f2">أسوار أمان متينة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s3f3">إضاءة ليلية آمنة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s3f4">مناطق لعب متعددة</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">🏥</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s4Title">رعاية بيطرية 24/7</h3>
+                            <p data-i18n="s4Desc">فريق بيطري متخصص متاح على مدار الساعة.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s4f1">أطباء بيطريون
+                                        معتمدون</span></li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s4f2">متاح على مدار الساعة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s4f3">أدوية ومعدات طبية</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s4f4">رعاية طارئة فورية</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">🎮</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s5Title">حظيرة لعب داخلية</h3>
+                            <p data-i18n="s5Desc">منطقة لعب داخلية مجهزة بالكامل بألعاب متنوعة.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s5f1">ألعاب متنوعة وممتعة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s5f2">مساحة داخلية مجهزة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s5f3">متاحة 24 ساعة</span></li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s5f4">مناسبة لجميع الأحجام</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card-full" tabindex="0">
+                        <div class="card-image-wrap">
+                            <img src="images/grooming-spa.png" alt="" />
+                        </div>
+                        <div class="scf-icon-wrap"><span class="scf-icon" aria-hidden="true">📸</span></div>
+                        <div class="scf-body">
+                            <h3 data-i18n="s6Title">تحديثات وصور يومية</h3>
+                            <p data-i18n="s6Desc">نرسل لك تحديثات وصور يومية لكلبك.</p>
+                            <ul class="scf-features" role="list">
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s6f1">تحديثات يومية منتظمة</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s6f2">صور ومقاطع فيديو</span>
+                                </li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s6f3">إشعارات فورية</span></li>
+                                <li><span aria-hidden="true">✓</span> <span data-i18n="s6f4">تقارير صحية دورية</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band" aria-labelledby="cta-s-title">
+            <div class="container cta-inner">
+                <div class="cta-text">
+                    <h2 id="cta-s-title" data-i18n="servicesCta1Title">جاهز لتجربة أفضل رعاية؟</h2>
+                    <p data-i18n="servicesCta1Desc">احجز الآن واكتشف الفرق مع لوفينغ هومز</p>
+                </div>
+                <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:center;">
+                    <a href="packages.html" class="btn btn-white btn-lg" data-i18n="servicesCta1Btn1">اختر حزمتك</a>
+                    <a href="contact.html" class="btn btn-outline-white btn-lg" data-i18n="servicesCta1Btn2">تواصل
+                        معنا</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-icon" aria-hidden="true">🐾</span>
+                    <span class="logo-text">
+                        <span class="logo-title" data-i18n="brandName">Loving Homes</span>
+                        <span class="logo-tagline" data-i18n="brandTagline">Dog Hotel</span>
+                    </span>
+                </a>
+                <p data-i18n="footerDesc">فندق كلاب متخصص في هونج كونج.</p>
+            </div>
+            <nav aria-label="Quick links">
+                <h4 data-i18n="footerQuickLinks">روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="navHome">الرئيسية</a></li>
+                    <li><a href="services.html" data-i18n="navServices">خدماتنا</a></li>
+                    <li><a href="packages.html" data-i18n="navPackages">الحزم</a></li>
+                    <li><a href="facilities.html" data-i18n="navFacilities">المرافق</a></li>
+                    <li><a href="about.html" data-i18n="navAbout">من نحن</a></li>
+                    <li><a href="contact.html" data-i18n="navContact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contact-col">
+                <h4 data-i18n="footerContact">تواصل معنا</h4>
+                <a href="tel:+85200000000">📞 +852 0000 0000</a>
+                <a href="mailto:info@lovinghomes.hk">📧 info@lovinghomes.hk</a>
+                <span>📍 <span data-i18n="infoLocationVal">هونج كونج</span></span>
+                <span>⏰ 24/7</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-row">
+                <p>© <span class="current-year"></span> Loving Homes. <span data-i18n="footerRights">جميع الحقوق
+                        محفوظة.</span></p>
+                <p data-i18n="footerMadeWith">صُنع بـ ❤️ لأجل كلابنا الأليفة</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
