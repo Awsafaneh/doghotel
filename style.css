@@ -2640,7 +2640,8 @@ a.info-card-value:hover {
     transform: translateX(4px)
 }
 
-/* LTR mobile nav */
+/* LTR mobile override: on small screens the back-to-top position
+   needs tighter spacing than the global [dir="ltr"] rule above */
 @media(max-width:768px) {
     [dir="ltr"] .back-to-top {
         right: 1rem;
