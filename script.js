@@ -152,7 +152,7 @@ const MobileNav = (() => {
         const open = () => { menu.classList.add('open'); ham.classList.add('open'); ham.setAttribute('aria-expanded', 'true'); };
         const close = () => { menu.classList.remove('open'); ham.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); };
         ham.addEventListener('click', () => menu.classList.contains('open') ? close() : open());
-        $$('.nav-link', menu).forEach(l => l.addEventListener('click', () => { if (window.innerWidth <= 768) close(); }));
+        $$('.nav-link', menu).forEach(l => l.addEventListener('click', () => { if (window.innerWidth <= 1040) close(); }));
         document.addEventListener('click', e => { if (!menu.contains(e.target) && !ham.contains(e.target)) close(); });
         document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     };
