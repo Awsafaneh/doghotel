@@ -2284,20 +2284,8 @@ a.info-card-value:hover {
     }
 }
 
-@media(max-width:768px) {
-    :root {
-        --nav-h: 64px
-    }
-
-    .section {
-        padding: 4rem 0
-    }
-
-    .container {
-        padding: 0 1.25rem
-    }
-
-    /* Mobile Nav */
+/* ===== TABLET NAV BREAKPOINT ===== */
+@media(max-width:1040px) {
     .nav-links {
         position: fixed;
         top: var(--nav-h);
@@ -2332,6 +2320,20 @@ a.info-card-value:hover {
 
     .nav-cta {
         display: none
+    }
+}
+
+@media(max-width:768px) {
+    :root {
+        --nav-h: 64px
+    }
+
+    .section {
+        padding: 4rem 0
+    }
+
+    .container {
+        padding: 0 1.25rem
     }
 
     .stats-grid {
