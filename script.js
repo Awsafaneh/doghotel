@@ -152,7 +152,7 @@ const MobileNav = (() => {
         const open = () => { menu.classList.add('open'); ham.classList.add('open'); ham.setAttribute('aria-expanded', 'true'); };
         const close = () => { menu.classList.remove('open'); ham.classList.remove('open'); ham.setAttribute('aria-expanded', 'false'); };
         ham.addEventListener('click', () => menu.classList.contains('open') ? close() : open());
-        $$('.nav-link', menu).forEach(l => l.addEventListener('click', () => { if (window.innerWidth <= 1040) close(); }));
+        $$('.nav-link', menu).forEach(l => l.addEventListener('click', () => { if (window.innerWidth <= 768) close(); }));
         document.addEventListener('click', e => { if (!menu.contains(e.target) && !ham.contains(e.target)) close(); });
         document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     };
@@ -279,24 +279,41 @@ const ContactForm = (() => {
             const valid = fields.map(id => validateField(id)).every(Boolean);
             if (!valid) { const bad = fields.find(id => !validateField(id)); document.getElementById(bad)?.focus(); return; }
 
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                const txt = submitBtn.querySelector('.btn-txt');
-                const spin = submitBtn.querySelector('.btn-spin');
-                if (txt) txt.style.display = 'none';
-                if (spin) spin.style.display = '';
-            }
-            if (successEl) successEl.style.display = 'none';
+            // 1. تجميع البيانات
+            const b = {
+                fullName: document.getElementById('full-name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                package: document.getElementById('package-select').value,
+                petInfo: document.getElementById('pet-info').value,
+                message: document.getElementById('message').value
+            };
 
-            await new Promise(r => setTimeout(r, 1400));
+            // 2. تنسيق النص للملف
+            const textRecord = `
+=========================================
+طلب حجز جديد - لوفينغ هومز (Loving Homes)
+=========================================
+تاريخ الطلب: ${new Date().toLocaleString('ar-EG')}
+الاسم الكامل: ${b.fullName}
+رقم الهاتف: ${b.phone}
+البريد الإلكتروني: ${b.email}
+الحزمة المطلوبة: ${b.package}
+معلومات الكلب: ${b.petInfo}
+الرسالة: ${b.message}
+=========================================
+`;
 
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                const txt = submitBtn.querySelector('.btn-txt');
-                const spin = submitBtn.querySelector('.btn-spin');
-                if (txt) txt.style.display = '';
-                if (spin) spin.style.display = 'none';
-            }
+            // 3. التنزيل المباشر
+            const blob = new Blob([textRecord], { type: 'text/plain;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `booking_${b.fullName.replace(/\s+/g, '_')}.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            // 4. إعادة ضبط النموذج
             form.reset();
             $$('.form-err').forEach(e => e.textContent = '');
             $$('.form-inp,.form-textarea,.form-select').forEach(e => {
